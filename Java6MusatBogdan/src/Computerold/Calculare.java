@@ -1,7 +1,7 @@
 /*
  * Calculare
  */
-package Computer;
+package Computerold;
 import java.util.Scanner;
 /**
  *

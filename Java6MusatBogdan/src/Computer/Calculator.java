@@ -1,15 +1,67 @@
 /*
- * Calculator
+ * TComputer frame
  */
-package Computer;
+package computer;
 
 /**
- *
- * @author Bogdan
+ * Calculator frame
+ * @author 
  */
 public class Calculator {
-    public static void main(String[] args) {
-        Calculare calculator = new Calculare();
-        calculator.startCalculator();
+    
+    private Screen ecran;
+    
+
+    public Calculator() {
+        this.ecran = new Screen();
+        
     }
+    
+    
+    /**
+     * Methods adds 2 digits introduced by the user from keyboard
+     */
+    public void add(){
+     
+
 }
+
+    void start() {
+           }
+
+    void descrease() {
+    } 
+    void multiply() {
+    }
+
+    void divide() { 
+
+         
+   // public void start(){
+        ecran.display("0");
+    }}
+    
+    /**
+     * Methods subtracts 2 digits introduced by the user
+     */
+   
+    
+/*}*/    /**
+     * Multiply two numbers introduced by the user
+     */
+   
+    
+    
+    /**
+     * Divides two numbers introduced by the user
+     */
+    
+    
+  
+    /**
+     * Starts the computer - display 0 on the Screen
+     */
+   /**
+     * Starts the computer - display 0 on the Screen
+     */
+   
