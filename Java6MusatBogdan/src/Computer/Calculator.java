@@ -39,7 +39,18 @@ public class Calculator {
          
    // public void start(){
         ecran.display("0");
-    }}
+    }
+
+    private static class Screen {
+
+        public Screen() {
+        }
+
+        private void display(String string) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    }
+}
     
     /**
      * Methods subtracts 2 digits introduced by the user
