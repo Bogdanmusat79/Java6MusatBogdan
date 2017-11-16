@@ -1,17 +1,17 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * We are using ONE file for ONE public class and not write more public classes 
+in one file!!!
  */
 package arrays;
-import java.util.Arrays;
+import java.util.Arrays; // this import is not used. We are removing these imports from our code before to deliver it.
 
 
 /**
  *
  * @author Bogdan
+ * 
  */
-public class array {
+public class array { // Class names are written with CAPS!!!!!!!
 
     /**
      * @param args the command line arguments
@@ -22,10 +22,12 @@ public class array {
        IBook ib1 = new IBook("El Zorab","1233337891012","George Cosbuc","www.mystore.ro/Elzorab","bestprice","art",17.00,"ibook","1189");
        ElectronicBook[]carti = {eb1,eb2,ib1};
        
-        
-       System.out.println(carti);
-              }
-
+       // as carti is a collection/array of ElectronicBooks you have to print
+       // book by book.
+       for(ElectronicBook currentEBook : carti){
+            currentEBook.printElectronicBook();// I defined the method that prints an ElectronicBook
+       }
+    }
     
     
 public static class EBook extends ElectronicBook {
@@ -50,7 +52,24 @@ public static class EBook extends ElectronicBook {
             this.electronicFormat = electronicFormat;
             this.year = year;
         }    
+                /**
+         Print content of an electronic book.
+         */
+        @Override
+        public void printElectronicBook(){
+            System.out.println("---------- EBook ----------");
+            System.out.println(" Title: "+bookTitle);
+            System.out.println(" ISBN: "+ISBN);
+            System.out.println(" Author: "+author);
+            System.out.println(" Link: "+link);
+            System.out.println(" Remarks: "+remarks);
+            System.out.println(" Publisher: "+publisher);
+            System.out.println(" Price: "+price);
+            System.out.println(" Electronic format: "+electronicFormat);
+            System.out.println(" Year: "+year);
+            System.out.println("---------------------------");
         }
+    }
     
    public static class IBook extends ElectronicBook {
         String bookTitle;
@@ -74,10 +93,28 @@ public static class EBook extends ElectronicBook {
             this.electronicFormat = electronicFormat;
             this.year = year;
         }    
+        
+        /**
+         Print content of an electronic book.
+         */
+        @Override
+        public void printElectronicBook(){
+            System.out.println("---------- EBook ----------");
+            System.out.println(" Title: "+bookTitle);
+            System.out.println(" ISBN: "+ISBN);
+            System.out.println(" Author: "+author);
+            System.out.println(" Link: "+link);
+            System.out.println(" Remarks: "+remarks);
+            System.out.println(" Publisher: "+publisher);
+            System.out.println(" Price: "+price);
+            System.out.println(" Electronic format: "+electronicFormat);
+            System.out.println(" Year: "+year);
+            System.out.println("---------------------------");            
         }
+    }
     
 
-    private static class ElectronicBook {
+    abstract private static class ElectronicBook {
 
         public ElectronicBook() {
         String bookTitle;
@@ -90,6 +127,8 @@ public static class EBook extends ElectronicBook {
         String electronicFormat;
         String year;
         }
+        
+        abstract void printElectronicBook();
     }
     
 }
