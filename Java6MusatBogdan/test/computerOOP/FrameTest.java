@@ -20,7 +20,13 @@ public class FrameTest {
     /**
      * Test of start method, of class Frame.
      */
-    
+    @Test
+    public void testStart() {
+        System.out.println("start");
+        Frame instance = new Frame();
+        instance.start();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -33,7 +39,7 @@ public class FrameTest {
         Frame instance = new Frame();
         instance.displayMessageOnScreen(message);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     /**
