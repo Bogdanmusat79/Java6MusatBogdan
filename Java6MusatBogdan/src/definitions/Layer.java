@@ -3,10 +3,12 @@
  */
 package definitions;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author Bogdan
  */
 public class Layer {
-    private Shapes = new LinkedList();
+    
 }

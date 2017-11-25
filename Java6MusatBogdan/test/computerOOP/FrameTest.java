@@ -25,8 +25,10 @@ public class FrameTest {
         System.out.println("start");
         Frame instance = new Frame();
         instance.start();
+        int valAfisat = instance.getEcran().getValoareAfisata();
+        assertEquals(0, valAfisat);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -39,7 +41,7 @@ public class FrameTest {
         Frame instance = new Frame();
         instance.displayMessageOnScreen(message);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
     /**
@@ -51,7 +53,7 @@ public class FrameTest {
         Frame instance = new Frame();
         instance.pushButtonsForOperand();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -63,7 +65,7 @@ public class FrameTest {
         Frame instance = new Frame();
         instance.pushButtonsForOperator();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -75,7 +77,7 @@ public class FrameTest {
         Frame instance = new Frame();
         instance.pushButtonEqual();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -85,11 +87,12 @@ public class FrameTest {
     public void testGetEcran() {
         System.out.println("getEcran");
         Frame instance = new Frame();
-        Screen expResult = null;
+        instance.getEcran();
+        String expResult = "getEcran";
         Screen result = instance.getEcran();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -102,7 +105,7 @@ public class FrameTest {
         Frame instance = new Frame();
         instance.setEcran(ecran);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -116,7 +119,7 @@ public class FrameTest {
         Button[] result = instance.getButoane();
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -129,7 +132,7 @@ public class FrameTest {
         Frame instance = new Frame();
         instance.setButoane(butoane);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -143,7 +146,7 @@ public class FrameTest {
         Processor result = instance.getProcesor();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -156,7 +159,7 @@ public class FrameTest {
         Frame instance = new Frame();
         instance.setProcesor(procesor);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
