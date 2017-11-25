@@ -105,7 +105,12 @@ public class ProcessorTest {
     public void testCalculeaza() {
         System.out.println("calculeaza");
         Processor instance = new Processor();
-        Double expResult = instance.calculeaza();
+        //instance.calculeaza();
+        Double expResult = 4.00;
+        instance.setPrimulOperand(1.00);
+        instance.setAlDoileaOperand(3.00);
+        instance.setOperator('+');
+        
         Double result = instance.calculeaza();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
