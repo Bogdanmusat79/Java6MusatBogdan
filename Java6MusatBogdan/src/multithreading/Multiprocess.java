@@ -25,7 +25,7 @@ public class Multiprocess {
  pb= new ProcessBuilder(
  "java",
  "-classpath",
- "C:\\Users\\bogda\\Documents\\NetBeansProjects1\\Java6MusatBogdan\\In clasa\\build\\classes",
+ "C:\\Users\\bogda\\OneDrive\\Documents\\NetBeansProjects2\\Java6MusatBogdan\\Java6MusatBogdan\\build\\classes",
  "multithreading.SayHello",
  "2", "John", "Jane");
  Map<String, String> env = pb.environment();
@@ -33,7 +33,7 @@ public class Multiprocess {
  env.remove("OTHERVAR");
  env.put("TEXT_HI", "Hello ");
  pb.directory(new File(
-"C:\\Users\\bogda\\Documents\\NetBeansProjects1\\Java6MusatBogdan\\In clasa\\build\\classes\\java6multithretading\\SayHello.class")
+"C:\\Users\\bogda\\OneDrive\\Documents\\NetBeansProjects2\\Java6MusatBogdan\\Java6MusatBogdan\\build\\classes\\multithreading")
 );
  Process p1 = pb.start();
  Process p2 = pb.start();
